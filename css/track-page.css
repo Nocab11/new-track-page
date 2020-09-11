@@ -127,6 +127,79 @@
 .t-color span {
     color: #B7B7B7;
 }
+
+/***** START 11.09.2020 Стили для полоски возле статусов *****/
+
+.t-clause {
+    display: grid;
+    grid-template-columns: 8px minmax(0, 100%);
+    gap: 1rem;
+    position: relative;
+    margin-top: 25px;
+}
+.t-clause__line-gray {
+    background: #D0D0D0;
+    border-radius: 4px;
+}
+.t-clause__line-green {
+    position: relative;
+    background: #7CDD6D;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.t-clause__line-green:after {
+    display: table-cell;
+    position: absolute;
+    right: -6px;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    background: green;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    content: '';
+    background: url(https://c.radikal.ru/c12/2009/b1/58088aeb6a80.png) no-repeat;
+}
+.t-clause-box {
+    display: inline-grid;
+    grid-template-columns: minmax(0, 100%);
+    grid-template-rows: max-content;
+    gap: 2rem;
+    width: 100%;
+}
+.t-clause-box__item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 24px 32px;
+}
+.t-clause__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #B7B7B7;
+}
+.t-clause__desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B7B7B7;
+    padding-top: 5px;
+}
+.item_active .t-clause__subtitle {
+    color: #000000;
+}
+.item_active .t-clause__desc {
+    color: #7A7A7A;
+}
+
+/***** END 11.09.2020 Стили для полоски возле статусов *****/
+
 .t-notification-name {
     display: inline-block;
     margin-top: 10px;

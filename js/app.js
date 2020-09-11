@@ -63,3 +63,15 @@ function tooltipHandler () {
 }
 
 tooltipHandler();
+
+// Наложение зеленого слоя и размещение кружка относительно активного статуса
+function statusLine() {
+    let item_active = document.querySelectorAll('.item_active');
+    let item_active_last = (item_active[item_active.length-1]);
+    let item_last_center = (item_active[item_active.length-1]).clientHeight / 2;
+    let circle_center = item_active_last.offsetTop;
+    let height_all = circle_center + item_last_center;
+    document.querySelector('.t-clause__line-green').style.height = height_all + "px";
+}
+
+statusLine();
