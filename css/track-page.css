@@ -161,7 +161,7 @@
     font-size: 10px;
     color: white;
     content: '';
-    background: url(https://c.radikal.ru/c12/2009/b1/58088aeb6a80.png) no-repeat;
+    background: url(../images/circle.png) no-repeat;
 }
 .t-clause-box {
     display: inline-grid;
