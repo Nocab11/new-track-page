@@ -682,6 +682,9 @@
     .t-container {
         padding: 0;
     }
+    .t-location {
+        height: auto !important;
+    }
     .t-location, .t-details, .t-advertising {
         max-width: 100%;
         margin-left: 0;

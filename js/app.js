@@ -75,3 +75,13 @@ function statusLine() {
 }
 
 statusLine();
+
+function getHeightBlock() {
+    let location_block = document.querySelector('.t-location');
+    let details_block = document.querySelector('.t-details');
+    if (details_block.offsetHeight > location_block.offsetHeight) {
+        location_block.style.height = details_block.offsetHeight + 'px';
+    }
+}
+
+getHeightBlock();
