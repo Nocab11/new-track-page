@@ -587,6 +587,17 @@
         left: 85px;
     }
 }
+@media (max-width: 1024px) {
+    .t-barcode {
+        display: block;
+    }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .t-barcode {
+        display: block;
+    }
+}
+
 @media (max-width: 1120px) {
     .t-receipt__column:after {
         left: 87px;
@@ -780,9 +791,6 @@
         display: none;
     }
     .t-link__mobile {
-        display: block;
-    }
-    .t-barcode {
         display: block;
     }
 
